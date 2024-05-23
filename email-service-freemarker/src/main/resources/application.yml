@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: EmailServiceFreemarkerApplication
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    password: ########## #app password from Google account
+    username: ########@gmail.com
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        debug: true
+  email:
+    sender:
+      name: Praveen
+      location: HYD-SDPT
+  datasource:
+    url: jdbc:mysql://localhost:3306/email-service
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show_sql: true
+logging:
+  path: logs-data
+  file:
+    name:  EmailService-logs.log
+  level:
+    root: INFO
+  pattern:
+    console: "[${spring.application.name}] : %msg%n"
+    file: "%d{yyyy-mm-dd HH:mm:ss} [${spring.application.name}]  : %msg%n"

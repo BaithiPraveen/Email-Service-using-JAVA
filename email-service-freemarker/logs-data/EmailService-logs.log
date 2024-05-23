@@ -1,0 +1,54 @@
+2024-05-14T17:49:55.619+05:30 ERROR 13188 --- [EmailServiceFreemarkerApplication] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.pattern.console' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.pattern.console
+    Value: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{35} - %msg%n"
+    Origin: class path resource [application.yml] - 28:16
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{35} - %msg%n)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2024-05-14T17:50:32.009+05:30 ERROR 20640 --- [EmailServiceFreemarkerApplication] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.pattern.console' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.pattern.console
+    Value: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{35} - %msg%n"
+    Origin: class path resource [application.yml] - 28:16
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{35} - %msg%n)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+

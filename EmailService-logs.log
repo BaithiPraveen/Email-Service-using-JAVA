@@ -1,0 +1,15 @@
+2024-29-22 16:29:15 [EmailServiceFreemarkerApplication]  : Starting EmailServiceFreemarkerApplication using Java 21.0.1 with PID 16696 (D:\emailpoc\email-service-freemarker\target\classes started by pbaithi in D:\emailpoc)
+2024-29-22 16:29:15 [EmailServiceFreemarkerApplication]  : No active profile set, falling back to 1 default profile: "default"
+2024-29-22 16:29:18 [EmailServiceFreemarkerApplication]  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-29-22 16:29:18 [EmailServiceFreemarkerApplication]  : Finished Spring Data repository scanning in 196 ms. Found 1 JPA repository interface.
+2024-29-22 16:29:20 [EmailServiceFreemarkerApplication]  : Tomcat initialized with port 8080 (http)
+2024-29-22 16:29:20 [EmailServiceFreemarkerApplication]  : Root WebApplicationContext: initialization completed in 5172 ms
+2024-29-22 16:29:21 [EmailServiceFreemarkerApplication]  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-29-22 16:29:21 [EmailServiceFreemarkerApplication]  : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-29-22 16:29:21 [EmailServiceFreemarkerApplication]  : HHH000026: Second-level cache disabled
+2024-29-22 16:29:22 [EmailServiceFreemarkerApplication]  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-29-22 16:29:22 [EmailServiceFreemarkerApplication]  : HikariPool-1 - Starting...
+2024-29-22 16:29:24 [EmailServiceFreemarkerApplication]  : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18989e0
+2024-29-22 16:29:24 [EmailServiceFreemarkerApplication]  : HikariPool-1 - Start completed.
+2024-29-22 16:29:27 [EmailServiceFreemarkerApplication]  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-29-22 16:29:27 [EmailServiceFreemarkerApplication]  : Initialized JPA EntityManagerFactory for persistence unit 'default'
