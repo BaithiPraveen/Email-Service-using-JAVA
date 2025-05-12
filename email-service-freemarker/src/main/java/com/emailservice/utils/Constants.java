@@ -1,7 +1,8 @@
 package com.emailservice.utils;
 
 public class Constants {
-    public static String LOGS_FILE_PATH = "D:/emailpoc/EmailService-logs.log";
+//    public static String LOGS_FILE_PATH = "D:/emailpoc/EmailService-logs.log";
+    public static String LOGS_FILE_PATH = "D:/e-s/Email-Service-using-JAVA/EmailService-logs.log";
     public static String RECIPIENT_NAME = "recipientName";
     public static String LOCATION = "location";
     public static String SENDER_NAME = "senderName";

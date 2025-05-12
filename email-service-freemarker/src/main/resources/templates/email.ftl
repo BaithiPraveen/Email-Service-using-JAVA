@@ -32,6 +32,7 @@
             <p>This is a sample email template generated using FreeMarker.</p>
             <p>We hope you find this example helpful for creating your own email templates.</p>
         </#if>
+        <p>This is a sample email template generated using FreeMarker.</p>
         <p>Best regards,</p>
         <p>${senderName}</p>
         <p>${location}</p>

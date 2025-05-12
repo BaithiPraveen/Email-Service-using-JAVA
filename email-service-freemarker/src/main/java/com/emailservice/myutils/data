@@ -1,0 +1,30 @@
+check shift
+ String shift1StartTimeStr = "2024-05-23 06:00:00";
+        String shift1EndTimeStr = "2024-05-23 14:00:00";
+        String shift2StartTimeStr = "2024-05-23 14:00:00";
+        String shift2EndTimeStr = "2024-05-23 22:00:00";
+        String shift3StartTimeStr = "2024-05-23 22:00:00";
+        String shift3EndTimeStr = "2024-05-24 06:00:00";
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        LocalDateTime shift1StartTime = LocalDateTime.parse(shift1StartTimeStr, formatter);
+        LocalDateTime shift1EndTime = LocalDateTime.parse(shift1EndTimeStr, formatter);
+        LocalDateTime shift2StartTime = LocalDateTime.parse(shift2StartTimeStr, formatter);
+        LocalDateTime shift2EndTime = LocalDateTime.parse(shift2EndTimeStr, formatter);
+        LocalDateTime shift3StartTime = LocalDateTime.parse(shift3StartTimeStr, formatter);
+        LocalDateTime shift3EndTime = LocalDateTime.parse(shift3EndTimeStr, formatter);
+
+        LocalDateTime inTime = LocalDateTime.parse("2024-05-23 14:00:00", formatter);//attendance.getInTime();
+        LocalDateTime outTime = LocalDateTime.parse("2024-05-23 22:00:00", formatter);//attendance.getOutTime();
+        String shift = "";
+
+        if ((inTime.isAfter(shift1StartTime) || inTime.isEqual(shift1StartTime)) && inTime.isBefore(shift1EndTime)) {
+            shift = "Shift1";
+        } else if ((inTime.isAfter(shift2StartTime) || inTime.isEqual(shift2StartTime)) && inTime.isBefore(shift2EndTime)) {
+            shift = "Shift2";
+        } else if ((inTime.isAfter(shift3StartTime) || inTime.isEqual(shift3StartTime)) && inTime.isBefore(shift3EndTime)) {
+            shift = "Shift3";
+        } else {
+            shift = "No Shift";
+        }
